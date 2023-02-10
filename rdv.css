@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e3e3e3;
+  font-family: "Poppins", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: 137vh;
+  overscroll-behavior: none;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input,
+select,
+textarea {
+  color: #5a5a5a;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  border: solid 3px #62656a;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+h1 {
+  margin-top: 5rem;
+  color: #62656a;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  border-bottom: solid 2px #62656a;
+  margin: 1rem auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.path {
+  stroke-dasharray: 1281.138;
+  animation-fill-mode: forwards;
+  animation: dasharray 7s linear;
+}
+
+@keyframes dasharray {
+  from {
+    stroke-dashoffset: 1281.138;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.icon {
+  height: 100px;
+  width: 100px;
+}
+
+.email {
+  float: right;
+  width: 45%;
+}
+
+input[type="text"],
+[type="email"],
+select,
+textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #62656a;
+  color: #81b800;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+
+.message {
+  float: none;
+}
+
+.name {
+  float: left;
+  width: 45%;
+}
+
+select {
+  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
+    no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  color: #71747a;
+}
+
+:-moz-placeholder {
+  color: #71747a;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #71747a;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #71747a;
+}
+
+.dispos-title p {
+  background: none;
+  border: none;
+  color: #81b800;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.checkbox {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  accent-color: #81b8008c;
+}
+
+.group {
+  display: flex;
+  width: 4rem;
+  justify-content: space-around;
+}
+
+.dispos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.dispos label {
+  color: #71747a;
+  margin-left: 0.25rem;
+}
+
+.dispos-one,
+.dispos-three,
+.dispos-four,
+.dispos-five,
+.dispos-two {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.group {
+  margin-right: 4rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#form_button {
+  background: none;
+  border: solid 3px #81b800;
+  color: #81b800;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #81b800;
+  color: #f2f3eb;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .underline {
+    width: 68px;
+  }
+
+  #form_button {
+    padding: 15px 25px;
+  }
+
+  .icon {
+    scale: 1.8;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+
+  .underline {
+    width: 53px;
+  }
+
+  input[type="text"],
+  [type="email"],
+  select,
+  textarea {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  input[type="text"],
+  [type="email"],
+  select,
+  textarea {
+    font-size: 0.55rem;
+  }
+}
+
+@media screen and (max-height: 855px) {
+  body {
+    overflow: visible;
+    height: fit-content;
+  }
+}

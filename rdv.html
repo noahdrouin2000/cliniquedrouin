@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="rdv.css" />
+    <script
+      src="https://kit.fontawesome.com/84b8c9567a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Clinique Dentaire Drouin</title>
+    <link rel="icon" href="../Images/Clinique Drouin-1.png" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>&bull; Prendre Rendez-vous &bull;</h1>
+      <div class="underline"></div>
+      <div class="icon_wrapper">
+        <svg
+          class="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 286.23 268.677"
+        >
+          <path
+            id="Path_5"
+            data-name="Path 5"
+            d="M1261.2,3696.308c-8.689,30-76.746,83.962-119.031,23.6-18.647-26.621-12.672-62.683,14.5-80.893,34.012-22.792,90.874-32.494,104.526,57.3,22.832,156.286,102.8,17.715,60.771-66.284-22.373-38.254-47.057-53.266-77.008-67.649-51.711-21.238-132.65.254-167.248,52.369-47.031,72.2,5.279,184.087,78.959,194.245h0c73.151,9.98,110.479-22.48,110.479-22.48"
+            transform="translate(-1053.795 -3548.261)"
+            fill="none"
+            class="path"
+            stroke="#81b800"
+            stroke-linecap="round"
+            stroke-linejoin="bevel"
+            stroke-width="8"
+          />
+        </svg>
+      </div>
+      <form action="#" method="post" id="contact_form">
+        <div class="name">
+          <label for="name"></label>
+          <input
+            type="text"
+            placeholder="Mon nom est"
+            name="name"
+            id="name_input"
+            required
+          />
+        </div>
+        <div class="email">
+          <label for="email"></label>
+          <input
+            type="email"
+            placeholder="Mon e-mail est"
+            name="email"
+            id="email_input"
+            required
+          />
+        </div>
+        <div class="telephone">
+          <label for="name"></label>
+          <input
+            type="text"
+            placeholder="Mon numéro est"
+            name="telephone"
+            id="telephone_input"
+            required
+          />
+        </div>
+        <div class="subject">
+          <label for="subject"></label>
+          <input
+            type="text"
+            placeholder="Type de Rendez-vous"
+            name="subject"
+            id="subject_input"
+            required
+          />
+        </div>
+        <div class="message">
+          <label for="message"></label>
+          <textarea
+            name="message"
+            placeholder="Informations Supplémentaires"
+            id="message_input"
+            cols="30"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <div class="dispos">
+          <div class="dispos-title">
+            <p>Disponibilités</p>
+          </div>
+          <div class="dispos-one">
+            <div class="group">
+              <input type="checkbox" class="checkbox" name="lundi" id="lundi" />
+              <label for="dispos">LUN</label>
+            </div>
+            <div class="group">
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="lundi_am"
+                id="lundi-am"
+              />
+              <label for="dispos">AM</label>
+            </div>
+            <div class="group">
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="lundi_pm"
+                id="lundi-pm"
+              />
+              <label for="dispos">PM</label>
+            </div>
+          </div>
+          <div class="dispos-two">
+            <div class="group">
+              <input type="checkbox" class="checkbox" name="mardi" id="mardi" />
+              <label for="dispos">MAR</label>
+            </div>
+            <div class="group">
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="mardi_am"
+                id="mardi-am"
+              />
+              <label for="dispos">AM</label>
+            </div>
+            <div class="group">
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="mardi_pm"
+                id="mardi-pm"
+              />
+              <label for="dispos">PM</label>
+            </div>
+            <div class="group">
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="mardi_soir"
+                id="mardi-soir"
+              />
+              <label for="dispos">SOIR</label>
+            </div>
+          </div>
+          <div class="dispos-three">
+            <div class="group">
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="mercredi"
+                id="mercredi"
+              />
+              <label for="dispos">MER</label>
+            </div>
+            <div class="group">
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="mercredi_am"
+                id="mercredi-am"
+              />
+              <label for="dispos">AM</label>
+            </div>
+            <div class="group">
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="mercredi_pm"
+                id="mercredi-pm"
+              />
+              <label for="dispos">PM</label>
+            </div>
+          </div>
+          <div class="dispos-four">
+            <div class="group">
+              <input type="checkbox" class="checkbox" name="jeudi" id="jeudi" />
+              <label for="dispos">JEU</label>
+            </div>
+            <div class="group">
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="jeudi_am"
+                id="jeudi-am"
+              />
+              <label for="dispos">AM</label>
+            </div>
+            <div class="group">
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="jeudi_pm"
+                id="jeudi-pm"
+              />
+              <label for="dispos">PM</label>
+            </div>
+          </div>
+          <div class="dispos-five">
+            <div class="group">
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="vendredi"
+                id="vendredi"
+              />
+              <label for="dispos">VEN</label>
+            </div>
+            <div class="group">
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="vendredi_am"
+                id="vendredi-am"
+              />
+              <label for="dispos">AM</label>
+            </div>
+            <div class="group">
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="vendredi_pm"
+                id="vendredi-pm"
+              />
+              <label for="dispos">PM</label>
+            </div>
+          </div>
+        </div>
+        <div class="submit">
+          <input type="submit" value="Contacter" id="form_button" />
+        </div>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="rdv.js"></script>
+  </body>
+</html>
