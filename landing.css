@@ -30,7 +30,7 @@ body {
 }
 
 .img-bg {
-  background-image: url(./close-up-happy-brunette-girl-white-t-shirt-laughing-smiling-carefree-camera.png);
+  background-image: url(./close-up-happy-brunette-girl-white-t-shirt-laughing-smiling-carefree-camera.jpg);
   height: 90vh;
   background-size: cover;
   overflow: hidden;
@@ -402,7 +402,7 @@ body {
 /* Second Section */
 
 .second-sect {
-  background-image: url(./scroll-overlay.png);
+  background-image: url(./scroll-overlay.jpg);
   height: 38rem;
   display: flex;
   flex-direction: column;
@@ -574,7 +574,7 @@ body {
 }
 
 .fourth-sect-img {
-  background-image: url(./blur.png);
+  background-image: url(./blur.jpg);
   background-position: 0% 25%;
   height: 100%;
   background-size: cover;
