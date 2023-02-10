@@ -30,7 +30,7 @@ body {
 }
 
 .first-sect {
-  background: url(../Images/pexels-andrea-piacquadio-3812762.png);
+  background: url(./pexels-andrea-piacquadio-3812762.png);
   background-size: contain;
   width: 100%;
   height: 58.5rem;
@@ -387,7 +387,7 @@ body {
 }
 
 .fourth-sect-img {
-  background-image: url(../Images/blur.png);
+  background-image: url(./blur.png);
   background-position: 0% 25%;
   height: 30rem;
   background-size: cover;
