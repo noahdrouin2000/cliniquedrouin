@@ -42,15 +42,6 @@ function animateProgressBar() {
 
 animateProgressBar();
 
-function loadFirstSect() {
-  const windHeight = window.innerHeight;
-  const scrollHeight = firstSect.getBoundingClientRect().top - windHeight;
-  if (scrollHeight <= -425) {
-    firstSect.classList.remove("first-sect");
-    firstSect.classList.add("first-sect-show");
-  }
-}
-
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
