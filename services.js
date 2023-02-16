@@ -27,7 +27,7 @@ const imgEight = document.getElementById("img-eight");
 
 //Event Listeners
 
-window.addEventListener("scroll", debounce(coverScroll, 250));
+window.addEventListener("scroll", coverScroll);
 window.addEventListener("scroll", animateProgressBar);
 window.addEventListener("scroll", firstSectOpacity);
 window.addEventListener("load", checkPosition);
@@ -54,82 +54,87 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+let ticking = false;
 function coverScroll() {
-  let scrollPercentage =
-    ((document.documentElement.scrollTop + document.body.scrollTop) /
-      (document.documentElement.scrollHeight -
-        document.documentElement.clientHeight)) *
-    100;
-  if (scrollPercentage >= 4.4 && scrollPercentage <= 13.35) {
-    let scrollPercZero = scrollPercentage - 4.4;
-    let coverMov = scrollPercZero * 11.173;
-    coverOne.style.left = -coverMov + "%";
-  }
-  if (scrollPercentage > 13.35) {
-    coverOne.style.left = "-59rem";
-  }
+  if (!ticking) {
+    window.requestAnimationFrame(function () {
+      let scrollPercentage =
+        ((document.documentElement.scrollTop + document.body.scrollTop) /
+          (document.documentElement.scrollHeight -
+            document.documentElement.clientHeight)) *
+        100;
+      if (scrollPercentage >= 4.4 && scrollPercentage <= 13.35) {
+        let scrollPercZero = scrollPercentage - 4.4;
+        let coverMov = scrollPercZero * 11.173;
+        coverOne.style.left = -coverMov + "%";
+      }
+      if (scrollPercentage > 13.35) {
+        coverOne.style.left = "-59rem";
+      }
 
-  if (scrollPercentage >= 13.35 && scrollPercentage <= 22.3) {
-    let scrollPercZero = scrollPercentage - 13.35;
-    let coverMov = scrollPercZero * 11.173;
-    coverTwo.style.right = -coverMov + "%";
-  }
-  if (scrollPercentage > 22.3) {
-    coverTwo.style.right = "-59rem";
-  }
+      if (scrollPercentage >= 13.35 && scrollPercentage <= 22.3) {
+        let scrollPercZero = scrollPercentage - 13.35;
+        let coverMov = scrollPercZero * 11.173;
+        coverTwo.style.right = -coverMov + "%";
+      }
+      if (scrollPercentage > 22.3) {
+        coverTwo.style.right = "-59rem";
+      }
 
-  if (scrollPercentage >= 22.3 && scrollPercentage <= 31.25) {
-    let scrollPercZero = scrollPercentage - 22.3;
-    let coverMov = scrollPercZero * 11.173;
-    coverThree.style.left = -coverMov + "%";
-  }
-  if (scrollPercentage > 31.25) {
-    coverThree.style.left = "-59rem";
-  }
+      if (scrollPercentage >= 22.3 && scrollPercentage <= 31.25) {
+        let scrollPercZero = scrollPercentage - 22.3;
+        let coverMov = scrollPercZero * 11.173;
+        coverThree.style.left = -coverMov + "%";
+      }
+      if (scrollPercentage > 31.25) {
+        coverThree.style.left = "-59rem";
+      }
 
-  if (scrollPercentage >= 31.25 && scrollPercentage <= 40.2) {
-    let scrollPercZero = scrollPercentage - 31.25;
-    let coverMov = scrollPercZero * 11.173;
-    coverFour.style.right = -coverMov + "%";
-  }
-  if (scrollPercentage > 40.2) {
-    coverFour.style.right = "-59rem";
-  }
+      if (scrollPercentage >= 31.25 && scrollPercentage <= 40.2) {
+        let scrollPercZero = scrollPercentage - 31.25;
+        let coverMov = scrollPercZero * 11.173;
+        coverFour.style.right = -coverMov + "%";
+      }
+      if (scrollPercentage > 40.2) {
+        coverFour.style.right = "-59rem";
+      }
 
-  if (scrollPercentage >= 40.2 && scrollPercentage <= 49.15) {
-    let scrollPercZero = scrollPercentage - 40.2;
-    let coverMov = scrollPercZero * 11.173;
-    coverFive.style.left = -coverMov + "%";
-  }
-  if (scrollPercentage > 49.15) {
-    coverFive.style.left = "-59rem";
-  }
+      if (scrollPercentage >= 40.2 && scrollPercentage <= 49.15) {
+        let scrollPercZero = scrollPercentage - 40.2;
+        let coverMov = scrollPercZero * 11.173;
+        coverFive.style.left = -coverMov + "%";
+      }
+      if (scrollPercentage > 49.15) {
+        coverFive.style.left = "-59rem";
+      }
 
-  if (scrollPercentage >= 49.15 && scrollPercentage <= 58.1) {
-    let scrollPercZero = scrollPercentage - 49.15;
-    let coverMov = scrollPercZero * 11.173;
-    coverSix.style.right = -coverMov + "%";
-  }
-  if (scrollPercentage > 58.1) {
-    coverSix.style.right = "-59rem";
-  }
+      if (scrollPercentage >= 49.15 && scrollPercentage <= 58.1) {
+        let scrollPercZero = scrollPercentage - 49.15;
+        let coverMov = scrollPercZero * 11.173;
+        coverSix.style.right = -coverMov + "%";
+      }
+      if (scrollPercentage > 58.1) {
+        coverSix.style.right = "-59rem";
+      }
 
-  if (scrollPercentage >= 58.1 && scrollPercentage <= 67.05) {
-    let scrollPercZero = scrollPercentage - 58.1;
-    let coverMov = scrollPercZero * 11.173;
-    coverSeven.style.left = -coverMov + "%";
-  }
-  if (scrollPercentage > 67.05) {
-    coverSeven.style.left = "-59rem";
-  }
+      if (scrollPercentage >= 58.1 && scrollPercentage <= 67.05) {
+        let scrollPercZero = scrollPercentage - 58.1;
+        let coverMov = scrollPercZero * 11.173;
+        coverSeven.style.left = -coverMov + "%";
+      }
+      if (scrollPercentage > 67.05) {
+        coverSeven.style.left = "-59rem";
+      }
 
-  if (scrollPercentage >= 67.05 && scrollPercentage <= 76) {
-    let scrollPercZero = scrollPercentage - 67.05;
-    let coverMov = scrollPercZero * 11.173;
-    coverEight.style.right = -coverMov + "%";
-  }
-  if (scrollPercentage > 76) {
-    coverEight.style.right = "-59rem";
+      if (scrollPercentage >= 67.05 && scrollPercentage <= 76) {
+        let scrollPercZero = scrollPercentage - 67.05;
+        let coverMov = scrollPercZero * 11.173;
+        coverEight.style.right = -coverMov + "%";
+      }
+      if (scrollPercentage > 76) {
+        coverEight.style.right = "-59rem";
+      }
+    });
   }
 }
 
