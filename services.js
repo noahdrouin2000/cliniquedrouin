@@ -27,7 +27,7 @@ const imgEight = document.getElementById("img-eight");
 
 //Event Listeners
 
-window.addEventListener("scroll", coverScroll);
+window.addEventListener("scroll", debounce(coverScroll, 250));
 window.addEventListener("scroll", animateProgressBar);
 window.addEventListener("scroll", firstSectOpacity);
 window.addEventListener("load", checkPosition);
