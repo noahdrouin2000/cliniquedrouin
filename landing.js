@@ -24,7 +24,7 @@ const links = document.querySelector(".links-burger");
 //Event Listeners
 
 window.addEventListener("scroll", animateProgressBar);
-window.addEventListener("scroll", loadFirstSect);
+window.addEventListener("scroll", reqFirstSect);
 window.addEventListener("click", burgerMenu);
 
 //Functions
@@ -41,6 +41,19 @@ function animateProgressBar() {
 }
 
 animateProgressBar();
+
+function reqFirstSect(){
+  requestAnimationFrame(loadFirstSect);
+}
+
+function loadFirstSect() {
+  const windHeight = window.innerHeight;
+  const scrollHeight = firstSect.getBoundingClientRect().top - windHeight;
+  if (scrollHeight <= -425) {
+    firstSect.classList.remove("first-sect");
+    firstSect.classList.add("first-sect-show");
+  }
+}
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
