@@ -42,7 +42,7 @@ function animateProgressBar() {
 
 animateProgressBar();
 
-function reqFirstSect(){
+function reqFirstSect() {
   requestAnimationFrame(loadFirstSect);
 }
 

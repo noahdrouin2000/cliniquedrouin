@@ -16,14 +16,6 @@ const coverEight = document.getElementById("cover-eight");
 const loadingBar = document.querySelector(".loading-bar");
 const body = document.querySelector("body");
 const firstSect = document.querySelector(".first-sect");
-const imgOne = document.getElementById("img-one");
-const imgTwo = document.getElementById("img-two");
-const imgThree = document.getElementById("img-three");
-const imgFour = document.getElementById("img-four");
-const imgFive = document.getElementById("img-five");
-const imgSix = document.getElementById("img-six");
-const imgSeven = document.getElementById("img-seven");
-const imgEight = document.getElementById("img-eight");
 
 //Event Listeners
 
