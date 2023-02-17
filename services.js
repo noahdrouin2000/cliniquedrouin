@@ -140,27 +140,3 @@ function firstSectOpacity() {
     firstSect.style.opacity = opacityLevel;
   }
 }
-
-const observerOptions = {
-  root: null,
-  rootMargin: "0px",
-  threshold: 0.5,
-};
-
-function observerCallback(entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("in-view");
-    } else {
-      entry.target.classList.remove("in-view");
-    }
-  });
-}
-
-const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-const imgs = document.querySelectorAll(".img-cover");
-
-imgs.forEach((img) => {
-  observer.observe(img);
-});
