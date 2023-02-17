@@ -512,7 +512,7 @@ body {
 
 /* New things */
 
-.fadeup {
+.img-cover {
   transform: translateY(50px);
   opacity: 0;
   transition-property: transform, opacity;
