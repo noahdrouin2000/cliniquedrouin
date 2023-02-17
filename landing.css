@@ -272,15 +272,8 @@ body {
 /* First Section */
 
 .first-sect {
-  background-color: hsl(0, 0%, 93%);
-  height: 65rem;
-  opacity: 0;
-}
-
-.first-sect-show {
   background-color: #ededed;
   height: 65rem;
-  transition: all 0.75s ease;
 }
 
 .title {
