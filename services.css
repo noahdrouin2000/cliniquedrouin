@@ -391,8 +391,6 @@ body {
   background-position: 0% 25%;
   height: 30rem;
   background-size: cover;
-  filter: blur(8px);
-  -webkit-filter: blur(5px);
 }
 
 .fourth-sect-text {
@@ -509,4 +507,3 @@ body {
   cursor: pointer;
   transform: scale(1.1);
 }
-

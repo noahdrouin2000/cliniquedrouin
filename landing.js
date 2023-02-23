@@ -20,11 +20,12 @@ const loadingBar = document.querySelector(".loading-bar");
 const body = document.querySelector("body");
 const firstSect = document.querySelector(".first-sect");
 const links = document.querySelector(".links-burger");
+const menuIcon = document.querySelector('.menu-icon');
+const container = document.querySelector('.container');
 
 //Event Listeners
 
 window.addEventListener("scroll", animateProgressBar);
-window.addEventListener("click", burgerMenu);
 
 //Functions
 
@@ -48,4 +49,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       behavior: "smooth",
     });
   });
+});
+
+menuIcon.addEventListener('click', () => {
+  container.classList.toggle('active');
 });
