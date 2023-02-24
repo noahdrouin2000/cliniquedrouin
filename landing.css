@@ -48,7 +48,6 @@ body {
   left: 10vw;
   z-index: 3;
 }
-
 .nav-links {
   display: flex;
   width: 100vw;
@@ -257,6 +256,7 @@ body {
   display: flex;
   width: 80vw;
   height: fit-content;
+  align-items: center;
 }
 
 .about-us {
@@ -278,7 +278,6 @@ body {
 .about-us img {
   padding: 0.5rem;
   transition: all 0.5s ease;
-  cursor: pointer;
   margin-right: 2rem;
   width: 100%;
   height: 22vw;
@@ -342,7 +341,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.15vw solid hsl(78, 100%, 36%);
+  border: 0.1vw solid hsl(78, 100%, 36%);
   font-size: 0.9vw;
   transition: ease-in 0.2s;
   margin-top: 1.2vw;
@@ -358,7 +357,8 @@ body {
 
 .second-sect {
   background-image: url(./scroll-overlay.jpg);
-  height: 38rem;
+  background-position: 0;
+  height: 30vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -370,54 +370,55 @@ body {
 .scroll-title {
   text-align: center;
   font-weight: 600;
-  line-height: 3rem;
-  padding-top: 6rem;
-  font-size: 3.8rem;
-  margin-bottom: 6rem;
+  margin: 4vw 0;
+  font-size: 3.5vw;
   color: white;
+}
+
+.top-icon,
+.bottom-icon,
+.top-btn,
+.bottom-btn {
+  display: flex;
+  width: 50%;
+  justify-content: space-around
 }
 
 .scroll-ul-icon {
   display: flex;
   justify-content: space-around;
-  width: 85%;
+  width: 85vw;
   margin-inline: auto;
 }
 
 .scroll-li-icon {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .scroll-li-icon-img {
-  width: 10rem;
+  width: 8vw;
 }
 
-.scroll-ul-btn {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  width: 85%;
-  margin-inline: auto;
-  margin-top: 2.3rem;
-}
-
-.scroll-li-btn a {
+.scroll-li-icon a {
   text-decoration: none;
   color: hsl(78, 100%, 36%);
   font-weight: 600;
   background-color: hsl(0, 0%, 99%);
-  width: 10rem;
-  height: 3.8rem;
+  width: 10vw;
+  height: 3vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid hsl(78, 100%, 36%);
-  font-size: 1.15rem;
+  border: 0.1vw solid hsl(78, 100%, 36%);
+  font-size: 1.1vw;
   transition: ease-in 0.2s;
-  margin-bottom: 6rem;
+  margin: 2vw 0 5vw 0;
 }
 
-.scroll-li-btn a:hover {
+.scroll-li-icon a:hover {
   background-color: hsl(78, 100%, 36%);
   color: hsl(0, 0%, 99%);
   transform: scale(1.02);
@@ -426,54 +427,53 @@ body {
 /* Third Section */
 
 .third-sect {
-  height: 72rem;
+  height: 65vw;
   background-color: hsl(0, 0%, 91%);
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .no-map {
   display: flex;
   position: relative;
   align-items: center;
-  top: 8rem;
-  width: 85%;
+  width: 85vw;
   margin-inline: auto;
-  margin-bottom: 11.5rem;
+  margin-bottom: 3.5vw;
   justify-content: center;
 }
 
 .third-sect-text {
-  width: 36rem;
+  width: 28vw;
   display: flex;
   flex-direction: column;
   text-align: center;
   color: #71747a;
-  font-size: 1.1rem;
+  font-size: 0.9vw;
 }
 
 .third-sect-title {
-  margin-top: 2rem;
-  margin-bottom: 1.6rem;
-  font-size: 3rem;
+  margin: 1vw 0;
+  font-size: 2.3vw;
   color: hsl(220, 4%, 38%);
 }
 
 .collage {
   display: flex;
   justify-content: left;
-  width: 25vw;
-  height: 26vw;
-  padding: 0.5rem;
-  border-top-right-radius: 4rem;
-  border-bottom-left-radius: 4rem;
+  width: 27vw;
+  height: auto;
+  padding: 0.3vw;
+  border-top-right-radius: 3vw;
+  border-bottom-left-radius: 3vw;
   transition: all 0.5s ease;
   cursor: pointer;
 }
 
 .collage:hover {
   background-color: #e3e3e3;
-  transform: translateY(-0.15em);
+  transform: translateY(-0.1vw);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
@@ -487,15 +487,15 @@ body {
   color: hsl(78, 100%, 36%);
   font-weight: 600;
   background-color: hsl(0, 0%, 99%);
-  width: 16rem;
-  height: 3.8rem;
+  width: 13vw;
+  height: 3vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid hsl(78, 100%, 36%);
-  font-size: 1.15rem;
+  border: 0.1vw solid hsl(78, 100%, 36%);
+  font-size: 1vw;
   transition: ease-in 0.2s;
-  margin: 2.5rem auto;
+  margin: 2vw auto;
 }
 
 .third-sect-p h4:hover {
@@ -505,12 +505,8 @@ body {
   transform: scale(1.02);
 }
 
-.third-sect-p img {
-  margin-bottom: 0.1rem;
-}
-
 .third-sect-text img {
-  width: 3.5rem;
+  width: 3vw;
 }
 
 .third-sect-p li {
@@ -519,7 +515,8 @@ body {
 
 .map {
   margin-inline: auto;
-  width: 85%;
+  height: 13vw;
+  width: 80vw;
 }
 
 /* Fourth Section */
@@ -693,14 +690,58 @@ body {
     font-size: 1.3vw;
     width: 50vw;
   }
-  .scroll-title {
-    font-size: 3.1rem;
+  .first-sect {
+    height: 80vw;
   }
-  .scroll-li-icon-img {
-    width: 8.5rem;
+  .title h2 {
+    font-size: 2.7vw;
   }
-  .second-sect {
-    height: 35rem;
+  .about-us img {
+    height: 26vw;
+    width: 42vw;
+  }
+  .about-us-text {
+    width: 50vw;
+    margin-left: 3vw;
+    height: 28vw;
+  }
+  .about-title {
+    width: 70%;
+    font-size: 1.8vw;
+    line-height: 2.2vw;
+  }
+  .about-p {
+    width: 90%;
+    font-size: 0.95vw;
+  }
+  .third-sect {
+    height: 70vw;
+  }
+  
+  .third-sect-text {
+    font-size: 1.15vw;
+  }
+  
+  .third-sect-title {
+    margin: 1vw 0 2vw 0;
+    font-size: 2.75vw;
+  }
+  
+  .collage {
+    margin-left: 3vw;
+    width: 30vw
+  }
+  .third-sect-p h4 {
+    width: 14vw;
+    height: 3.5vw;
+    border: 0.15vw solid hsl(78, 100%, 36%);
+    font-size: 1.3vw;
+  }
+  .third-sect-text img {
+    width: 4vw;
+  }
+  .map {
+    height: 15vw;
   }
   .fourth-sect {
     height: 23.5rem;
@@ -745,6 +786,9 @@ body {
     height: 3.5vw;
     font-size: 1.2vw;
   }
+  .third-sect-title {
+    font-size: 3vw;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -758,13 +802,20 @@ body {
     padding-top: 1vw;
     padding-left: 3.5vw;
   }
-  .nav-links {
-    margin-right: 3.5vw;
+  #nav-bar img {
+    left: 5%;
+    width: 15%;
   }
   .nav-links li {
     margin-right: 2vw;
-    letter-spacing: 0.3vw;
-    font-size: 1.25vw;
+    letter-spacing: 0.2vw;
+    font-size: 1.5vw;
+  }
+  .rdv-text {
+    width: 18vw;
+    height: 3.5vw;
+    font-size: 1.4vw;
+    border: solid 0.2vw;
   }
   .text-image-div {
     height: 40vw;
@@ -776,76 +827,110 @@ body {
   .text-image {
     font-size: 1.5vw;
   }
+  .first-sect {
+    height: 110vw;
+    justify-content: center;
+  }
+  .about-us {
+    width: 110vw;
+  }
+  .title {
+    margin-bottom: 0;
+  }
+  .title h2 {
+    text-align: center;
+    width: 70%;
+    font-size: 3vw;
+    line-height: 3.5vw;
+  }
+  .about-total-cont {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .about-us-img-cont {
+    margin: 1.5vw auto;
+  }
+  .about-us-img-cont img {
+    height: 35vw;
+    width: auto;
+  }
+  .about-us-text {
+    height: fit-content;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+  .about-title {
+    font-size: 2vw;
+    margin: 2.5vw 0 4vw 0;
+    font-size: 2.5vw;
+    line-height: 3.5vw;
+  }
   .about-p {
-    line-height: 1.1vw;
-    font-size: 0.8vw;
+    width: 75%;
+    font-size: 1.6vw;
+    line-height: 2vw;
   }
-  .rdv-div {
-    right: 2vw;
+  .savoir-plus {
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    width: 15vw;
+    height: 4vw;
   }
-  .rdv-text {
-    width: 17vw;
-    font-size: 1.2vw;
-    height: 3.5vw;
-    border: 0.2vw solid hsl(78, 100%, 36%);
-  }
-  #nav-bar img {
-    left: 5%;
-    width: 15%;
-  }
-
   .empty::before {
-    height: 1.25rem;
+    height: 2.5vw;
   }
   .scroll-title {
-    font-size: 3rem;
+    font-size: 6.5vw;
+    margin-bottom: 8vw;
   }
   .scroll-li-icon-img {
-    width: 7rem;
+    width: 13vw;
   }
   .second-sect {
-    height: 30rem;
+    height: 65vw;
   }
-  .scroll-li-btn a {
-    height: 3rem;
-    width: 8.25rem;
-    font-size: 1rem;
+  .scroll-li-icon a {
+    height: 4.5vw;
+    margin-top: 4vw;
+    border-width: 0.2vw;
+    width: 16vw;
+    font-size: 2vw;
   }
   .third-sect {
-    height: 61rem;
+    height: 100vw;
+
   }
   .no-map {
-    top: 7rem;
-    width: 75%;
+    margin-bottom: 6vw;
   }
   .third-sect-text {
-    font-size: 0.9rem;
-    width: 50%;
+    font-size: 1.6vw;
+    width: 34vw;
   }
   .third-sect-title {
-    font-size: 2.5rem;
-    line-height: 2.6rem;
-    margin-top: 0;
+    margin: 0 0 3vw 0;
+    font-size: 3.5vw;
+    width: 100%;
   }
   .collage {
-    padding: 0.7rem;
+    width: 40vw
   }
   .third-sect-p h4 {
-    height: 3rem;
-    width: 11rem;
-    font-size: 1.1rem;
-    margin: 1.5rem auto;
+    width: 16vw;
+    height: 4vw;
+    margin: 3vw auto;
+    border: 0.2vw solid hsl(78, 100%, 36%);
+    font-size: 1.7vw;
   }
   .third-sect-text img {
-    width: 3rem;
+    width: 5vw;
   }
   .map {
-    width: 80%;
-    height: 11rem;
-  }
-  .third-sect-p p,
-  .third-sect-p li {
-    font-size: 0.8rem;
+    height: 18vw;
+    width: 85vw;
   }
   .fourth-sect {
     height: 20rem;
@@ -939,109 +1024,88 @@ body {
     width: 20%;
   }
   .first-sect {
-    height: 110vw;
-    justify-content: center;
+    height: 140vw;
   }
-  .about-us {
-    width: 110vw;
+  .title {
+    margin-bottom: 2vw;
   }
   .title h2 {
-    text-align: center;
-    width: 70%;
-    font-size: 2.5vw;
-    line-height: 3vw;
-  }
-  .about-total-cont {
-    flex-direction: column;
-    height: fit-content;
-  }
-  .about-us-img-cont {
-    margin: 2vw auto;
+    width: 90%;
+    font-size: 3.8vw;
+    line-height: 5vw;
   }
   .about-us-img-cont img {
-    height: 35vw;
+    height: 40vw;
+    width: auto;
   }
   .about-us-text {
-    height: fit-content;
-    width: 80vw;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    width: 85vw;
   }
   .about-title {
-    font-size: 2vw;
-    margin: 3vw 0;
+    font-size: 3vw;
+    margin: 2.5vw 0 4vw 0;
   }
   .about-p {
-    width: 75%;
-    font-size: 1.4vw;
-    line-height: 2vw;
+    width: 80%;
+    font-size: 1.9vw;
+    line-height: 2.5vw;
   }
   .savoir-plus {
-    font-size: 1.5vw;
-    margin-top: 2vw;
-    width: 15vw;
-    height: 4vw;
+    font-size: 2vw;
+    margin-top: 3vw;
+    width: 25vw;
+    height: 6vw;
   }
   .empty::before {
-    height: 3vw;
+    height: 3.5vw;
   }
   .scroll-title {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 6vw;
+    margin-bottom: 9vw;
   }
-  .scroll-ul-btn {
-    margin-top: 1.5rem;
+  .scroll-ul-icon {
+    width: 90vw;
   }
   .scroll-li-icon-img {
-    width: 5.5rem;
+    width: 15vw;
   }
   .second-sect {
-    height: 21rem;
+    height: 70vw;
   }
-  .scroll-li-btn a {
-    height: 2.1rem;
-    border-width: 1.5px;
-    width: 6.2rem;
-    font-size: 0.75rem;
+  .scroll-li-icon a {
+    height: 6vw;
+    border-width: 0.3vw;
+    margin-top: 5vw;
+    width: 19vw;
+    font-size: 2.25vw;
   }
   .third-sect {
-    height: 50rem;
+    height: 110vw;
   }
   .no-map {
-    top: 6rem;
-    width: 85%;
-    margin-bottom: 8rem;
+    margin-bottom: 8vw;
   }
   .third-sect-text {
+    font-size: 1.9vw;
     width: 50%;
-    margin-right: 0.5rem;
   }
   .third-sect-title {
-    font-size: 2rem;
+    margin: 0 0 3vw 0;
+    font-size: 4.5vw;
   }
   .collage {
-    padding: 0.7rem;
-    padding: 0.5rem;
-    margin-left: 0.5rem;
+    width: 50%
   }
   .third-sect-p h4 {
-    height: 2.2rem;
-    width: 9rem;
-    font-size: 0.9rem;
-    margin: 1.4rem auto;
-    border-width: 1.5px;
+    width: 18vw;
+    height: 4.5vw;
+    font-size: 2vw;
   }
   .third-sect-text img {
-    width: 2.8rem;
+    width: 5vw;
   }
   .map {
-    width: 85%;
-    height: 10rem;
-  }
-  .third-sect-p p,
-  .third-sect-p li {
-    font-size: 0.75rem;
+    height: 23vw;
   }
   .fourth-sect {
     height: 18rem;
@@ -1100,6 +1164,85 @@ body {
   .menu-icon i {
     font-size: 5vw;
   }
+  .first-sect {
+    height: 170vw;
+  }
+  .title h2 {
+    font-size: 5vw;
+    line-height: 6vw;
+  }
+  .about-us-img-cont img {
+    height: 45vw;
+    width: auto;
+  }
+  .about-us-text {
+    width: 90vw;
+  }
+  .about-title {
+    font-size: 4vw;
+    margin: 2.5vw 0 4vw 0;
+  }
+  .about-p {
+    width: 80%;
+    font-size: 2.2vw;
+    line-height: 3.1vw;
+  }
+  .savoir-plus {
+    font-size: 2.3vw;
+    margin-top: 3vw;
+    width: 25vw;
+    height: 6vw;
+  }
+  .empty::before {
+    height: 5.5vw;
+  }
+  .second-sect {
+    height: 75vw;
+  }
+  .scroll-ul-icon {
+    width: 95%;
+  }
+  .scroll-title {
+    font-size: 8vw;
+    margin-bottom: 7vw;
+  }
+  .scroll-li-icon-img {
+    width: 16vw;
+  }
+  .scroll-li-icon a {
+    height: 6vw;
+    border-width: 0.3vw;
+    width: 21vw;
+    font-size: 2.5vw;
+  }
+  .third-sect {
+    height: 135vw;
+  }
+  .no-map {
+    width: 90vw;
+  }
+  .third-sect-text {
+    font-size: 2.75vw;
+    width: 80vw;
+  }
+  .third-sect-title {
+    font-size: 6vw;
+  }
+  .third-sect-p h4 {
+    width: 22vw;
+    height: 6vw;
+    font-size: 2.5vw;
+  }
+  .third-sect-text img {
+    width: 9vw;
+  }
+  .collage {
+    display: none;
+  }
+  .map {
+    height: 28vw;
+    width: 90vw;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -1110,132 +1253,120 @@ body {
     height: 190vw;
     background-position: -155vw 0;
   }
-  #nav-bar {
-    padding-top: 5vw;
+  #nav-bar img {
+    width: 30vw;
+    left: 2vw;
   }
   .container-total {
-    top: 13vw;
-    right: 33vw;
+    top: 15.5vw;
+    right: 41vw;
+  }
+  .container,
+  .active {
+    right: -10.5vw;
+    margin-top: 4vw;
+  }
+  .menu {
+    width: 35vw;
+    height: 50vw;
+  }
+  .menu-icon i {
+    font-size: 7vw;
+  }
+  .menu a {
+    font-size: 3.5vw;
+    padding-top: 2vw;
   }
   .text-image-div {
-    height: 145vw;
-    left: 4vw;
-  }
-  .title-image {
-    font-size: 4vw;
-    margin-bottom: 1.5vw;
-  }
-  .text-image {
-    font-size: 2vw;
-    width: 60vw;
+    display: none;
   }
   .rdv-text {
-    width: 30vw;
-    font-size: 2.2vw;
-    height: 6.5vw;
+    width: 37vw;
+    font-size: 2.8vw;
+    height: 7vw;
+    border: solid 0.3vw;
   }
-  #nav-bar img {
-    left: 5%;
-    width: 20%;
-  }
-  .about-us {
-    width: 120vw;
+  .first-sect {
+    height: 200vw;
   }
   .title h2 {
-    text-align: center;
-    width: 80%;
-    font-size: 3.5vw;
-    line-height: 4.5vw;
-  }
-  .about-us-img-cont {
-    margin: 2vw auto 0 auto;
+    width: 85vw;
+    font-size: 5.3vw;
+    line-height: 6vw;
   }
   .about-us-img-cont img {
-    height: 42vw;
-  }
-  .about-us-text {
-    height: fit-content;
-    width: 80vw;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    height: 55vw;
+    width: auto;
   }
   .about-title {
-    font-size: 2.75vw;
-    line-height: 3.5vw;
-    margin: 2vw 0;
+    font-size: 5vw;
+    margin: 3.5vw 0 5vw 0;
+    line-height: 5vw;
   }
   .about-p {
-    width: 70vw;
-    font-size: 1.6vw;
-    line-height: 2.5vw;
+    width: 80%;
+    font-size: 2.8vw;
+    line-height: 3.5vw;
   }
   .savoir-plus {
-    font-size: 1.75vw;
-    margin-top: 2vw;
-    width: 18vw;
-    height: 5vw;
-    border: solid 0.23vw;
+    font-size: 3vw;
+    margin-top: 4vw;
+    width: 30vw;
+    height: 7vw;
+    border: solid 0.3vw;
   }
   .empty::before {
-    height: 3vw;
-  }
-  .scroll-title {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-  }
-  .scroll-ul-btn {
-    margin-top: 1.5rem;
-  }
-  .scroll-li-icon-img {
-    width: 5.5rem;
+    height: 5.5vw;
   }
   .second-sect {
-    height: 21rem;
+    height: 155vw;
+    background-position-x: -12rem;
   }
-  .scroll-li-btn a {
-    height: 2.1rem;
-    border-width: 1.5px;
-    width: 6.2rem;
-    font-size: 0.75rem;
+  .scroll-ul-icon {
+    display: block;
+  }
+  .top-icon,
+  .bottom-icon {
+    margin: 0 auto 10vw auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .scroll-title {
+    font-size: 10vw;
+    margin: 14vw 0;
+  }
+  .scroll-li-icon-img {
+    width: 23vw;
+  }
+  .scroll-li-icon a {
+    height: 9vw;
+    border-width: 0.5vw;
+    width: 30vw;
+    font-size: 3.5vw;
   }
   .third-sect {
-    height: 50rem;
-  }
-  .no-map {
-    top: 6rem;
-    width: 85%;
-    margin-bottom: 8rem;
+    height: 160vw;
   }
   .third-sect-text {
-    width: 50%;
-    margin-right: 0.5rem;
+    font-size: 3.5vw;
   }
   .third-sect-title {
-    font-size: 2rem;
-  }
-  .collage {
-    padding: 0.7rem;
-    padding: 0.5rem;
-    margin-left: 0.5rem;
+    font-size: 8.5vw;
+    margin-bottom: 6vw;
   }
   .third-sect-p h4 {
-    height: 2.2rem;
-    width: 9rem;
-    font-size: 0.9rem;
-    margin: 1.4rem auto;
-    border-width: 1.5px;
+    width: 28vw;
+    height: 8vw;
+    font-size: 3.5vw;
+    border: solid 0.4vw;
+    margin: 5vw auto;
   }
   .third-sect-text img {
-    width: 2.8rem;
+    width: 10vw;
   }
   .map {
-    width: 85%;
-    height: 10rem;
-  }
-  .third-sect-p p,
-  .third-sect-p li {
-    font-size: 0.75rem;
+    height: 30vw;
   }
   .fourth-sect {
     height: 18rem;
@@ -1276,42 +1407,6 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-  .first-sect {
-    height: 160vw;
-  }
-  .title h2 {
-    width: 85%;
-    font-size: 4vw;
-    line-height: 5vw;
-  }
-  .about-us-img-cont {
-    margin: 3vw auto 0 auto;
-  }
-  .about-us-img-cont img {
-    height: 50vw;
-  }
-  .about-us-text {
-    width: 85vw;
-  }
-  .about-title {
-    font-size: 3.25vw;
-    line-height: 4vw;
-    margin: 4vw 0;
-  }
-  .about-p {
-    width: 75vw;
-    font-size: 2vw;
-    line-height: 3vw;
-  }
-  .savoir-plus {
-    font-size: 2.2vw;
-    margin-top: 3vw;
-    width: 20vw;
-    height: 6vw;
-  }
-  .empty::before {
-    height: 4.75vw;
-  }
 }
 
 @media screen and (max-width: 320px) {
@@ -1319,41 +1414,68 @@ body {
     height: 3.2vw;
   }
   .first-sect {
-    height: 220vw;
+    height: 230vw;
   }
   .title h2 {
-    width: 85%;
-    font-size: 5vw;
-    line-height: 6.5vw;
-  }
-  .about-us-img-cont {
-    margin: 4vw auto 0 auto;
-  }
-  .about-us-img-cont img {
-    height: 60vw;
-  }
-  .about-us-text {
-    width: 85vw;
-  }
-  .about-title {
-    font-size: 4.25vw;
-    width: 80vw;
-    line-height: 5vw;
-    margin: 5vw 0;
+    font-size: 5.8vw;
+    line-height: 7vw;
   }
   .about-p {
-    width: 80vw;
-    font-size: 2.75vw;
+    width: 85%;
+    font-size: 3vw;
     line-height: 4vw;
   }
   .savoir-plus {
-    font-size: 3vw;
-    margin-top: 4vw;
-    width: 27vw;
-    height: 7vw;
-    border: solid 0.4vw;
+    font-size: 3.5vw;
+    margin-top: 4.5vw;
+    width: 32vw;
+    height: 8vw;
   }
-  .empty::before {
-    height: 6vw;
+  .second-sect {
+    height: 175vw;
+    background-position-x: -15rem;
+  }
+  .top-icon,
+  .bottom-icon {
+    margin: 0 auto 14vw auto;
+  }
+  .scroll-title {
+    font-size: 12vw;
+    margin: 16vw 0;
+  }
+  .scroll-li-icon-img {
+    width: 25vw;
+  }
+  .scroll-li-icon a {
+    height: 10vw;
+    border-width: 0.55vw;
+    width: 33vw;
+    font-size: 4vw;
+  }
+  .third-sect {
+    height: 230vw;
+  }
+  .no-map {
+    margin-bottom: 10vw;
+  }
+  .third-sect-text {
+    font-size: 4.2vw;
+  }
+  .third-sect-title {
+    font-size: 12vw;
+    margin-bottom: 8vw;
+  }
+  .third-sect-p h4 {
+    width: 35vw;
+    height: 10vw;
+    font-size: 4.5vw;
+    border: solid 0.5vw;
+    margin: 7vw auto;
+  }
+  .third-sect-text img {
+    width: 15vw;
+  }
+  .map {
+    height: 40vw;
   }
 }
