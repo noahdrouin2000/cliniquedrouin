@@ -8,6 +8,8 @@ tl.fromTo("#clock, #map", { y: 0 }, { y: -8, yoyo: true, repeat: -1 });
 const loadingBar = document.querySelector(".loading-bar");
 const body = document.querySelector("body");
 const firstSect = document.querySelector(".first-sect");
+const menuIcon = document.querySelector(".menu-icon");
+const container = document.querySelector(".container");
 
 //Event Listeners
 
@@ -35,4 +37,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       behavior: "smooth",
     });
   });
+});
+
+menuIcon.addEventListener("click", () => {
+  container.classList.toggle("active");
 });

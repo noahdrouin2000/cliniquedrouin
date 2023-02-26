@@ -1424,6 +1424,32 @@ body {
   .loading-bar {
     height: 3.2vw;
   }
+  .img-bg {
+    height: 220vw;
+    background-position: -200vw 0;
+  }
+  #nav-bar img {
+    width: 33vw;
+    left: 3vw;
+  }
+  .container-total {
+    top: 18vw;
+  }
+  .container,
+  .active {
+    right: -10vw;
+    margin-top: 7vw;
+  }
+  .nav-bar-right {
+    margin-top: 2vw;
+  }
+  .menu-icon i {
+    font-size: 8vw;
+  }
+  .rdv-text {
+    width: 38vw;
+    font-size: 3.1vw;
+  }
   .first-sect {
     height: 230vw;
   }
