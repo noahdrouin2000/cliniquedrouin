@@ -1146,6 +1146,9 @@ body {
   .sec-p {
     font-size: 1.5vw;
   }
+  .fixed {
+    display: none;
+  }
   .career-sect {
     height: 50vw;
   }
