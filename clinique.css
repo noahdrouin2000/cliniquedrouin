@@ -740,7 +740,7 @@ body {
   .sec-sect-cont {
     width: 82vw;
     height: 46vw;
-  } 
+  }
   .sec-img {
     top: -3vw;
   }
@@ -760,6 +760,15 @@ body {
   }
   .empty::before {
     height: 2vw;
+  }
+  .career-sect {
+    height: 25vw;
+  }
+  .title-career {
+    font-size: 2.9vw;
+  }
+  .p-career {
+    font-size: 1.1vw;
   }
   .third-sect {
     height: 70vw;
@@ -943,7 +952,7 @@ body {
   .sec-sect-cont {
     width: 82vw;
     height: 46vw;
-  } 
+  }
   .sec-img {
     top: -3.5vw;
   }
@@ -962,6 +971,16 @@ body {
   }
   .empty::before {
     height: 2.5vw;
+  }
+  .career-sect {
+    height: 30vw;
+  }
+  .title-career {
+    font-size: 3.25vw;
+  }
+  .p-career {
+    font-size: 1.4vw;
+    width: 65%;
   }
   .third-sect {
     height: 100vw;
@@ -1112,7 +1131,7 @@ body {
   .sec-sect-cont {
     width: 87vw;
     height: 50vw;
-  } 
+  }
   .sec-total-text-cont {
     width: 50%;
     margin: 4vw 0 0 4.5vw;
@@ -1126,6 +1145,16 @@ body {
   }
   .sec-p {
     font-size: 1.5vw;
+  }
+  .career-sect {
+    height: 50vw;
+  }
+  .title-career {
+    font-size: 4.8vw;
+  }
+  .p-career {
+    font-size: 2.1vw;
+    width: 70%;
   }
   .third-sect {
     height: 110vw;
@@ -1265,7 +1294,7 @@ body {
     font-size: 3vw;
   }
   .sec-sect {
-    height: 150vw;
+    height: 160vw;
   }
   .sec-img {
     top: -4vw;
@@ -1274,20 +1303,20 @@ body {
     height: 100%;
     flex-direction: column;
     align-items: center;
-  } 
+  }
   .sec-img-cont {
     height: 45%;
     display: flex;
     justify-content: center;
   }
   .sec-total-text-cont {
-    width: 70%;
+    width: 75%;
     height: 55%;
     margin: 0;
     text-align: center;
   }
   .sec-subtitle {
-    font-size: 2.5vw;
+    font-size: 3vw;
     margin-bottom: 0;
   }
   .sec-title {
@@ -1295,7 +1324,20 @@ body {
     font-size: 6vw;
   }
   .sec-p {
-    font-size: 2.4vw;
+    font-size: 2.6vw;
+  }
+  .empty::before {
+    height: 5vw;
+  }
+  .career-sect {
+    height: 65vw;
+  }
+  .title-career {
+    font-size: 6vw;
+  }
+  .p-career {
+    font-size: 2.5vw;
+    width: 73%;
   }
   .third-sect {
     height: 135vw;
@@ -1426,6 +1468,17 @@ body {
   }
   .sec-p {
     font-size: 2.9vw;
+  }
+  .career-sect {
+    height: 85vw;
+  }
+  .title-career {
+    font-size: 6.5vw;
+    margin-bottom: 1vw;
+  }
+  .p-career {
+    font-size: 3vw;
+    width: 77%;
   }
   .third-sect {
     height: 160vw;
@@ -1580,6 +1633,16 @@ body {
   .empty::before {
     height: 6.5vw;
   }
+  .career-sect {
+    height: 90vw;
+  }
+  .title-career {
+    font-size: 7vw;
+  }
+  .p-career {
+    font-size: 3.2vw;
+    width: 75%;
+  }
   .third-sect {
     height: 230vw;
   }
@@ -1636,6 +1699,6 @@ body {
   .footer li {
     width: 30vw;
     font-size: 3vw;
-    line-height: vw;
+    line-height: 3.75vw;
   }
 }
