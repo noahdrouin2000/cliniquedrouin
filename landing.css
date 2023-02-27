@@ -1057,6 +1057,8 @@ body {
   }
   .second-sect {
     height: 70vw;
+    background-size: auto 100%;
+    background-attachment: scroll;
   }
   .scroll-li-icon a {
     height: 6vw;
