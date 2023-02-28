@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
 }
 
 a {
@@ -674,6 +675,7 @@ body {
     letter-spacing: 0.3vw;
     font-size: 1vw;
   }
+
   .rdv-div {
     margin-right: 1vw;
     right: 2vw;
@@ -972,6 +974,9 @@ body {
   }
   .empty::before {
     height: 2.5vw;
+  }
+  .fixed {
+    height: 50vw;
   }
   .career-sect {
     height: 30vw;
