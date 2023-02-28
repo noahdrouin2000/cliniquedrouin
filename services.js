@@ -60,7 +60,7 @@ function coverScroll() {
         coverOne.style.left = -coverMov + "%";
       }
       if (scrollPercentage > 13.35) {
-        coverOne.style.left = "-59rem";
+        coverOne.style.left = "-100vw";
       }
 
       if (scrollPercentage >= 13.35 && scrollPercentage <= 22.3) {
@@ -69,7 +69,7 @@ function coverScroll() {
         coverTwo.style.right = -coverMov + "%";
       }
       if (scrollPercentage > 22.3) {
-        coverTwo.style.right = "-59rem";
+        coverTwo.style.right = "-100vw";
       }
 
       if (scrollPercentage >= 22.3 && scrollPercentage <= 31.25) {
@@ -78,7 +78,7 @@ function coverScroll() {
         coverThree.style.left = -coverMov + "%";
       }
       if (scrollPercentage > 31.25) {
-        coverThree.style.left = "-59rem";
+        coverThree.style.left = "-100vw";
       }
 
       if (scrollPercentage >= 31.25 && scrollPercentage <= 40.2) {
@@ -87,7 +87,7 @@ function coverScroll() {
         coverFour.style.right = -coverMov + "%";
       }
       if (scrollPercentage > 40.2) {
-        coverFour.style.right = "-59rem";
+        coverFour.style.right = "-100vw";
       }
 
       if (scrollPercentage >= 40.2 && scrollPercentage <= 49.15) {
@@ -96,7 +96,7 @@ function coverScroll() {
         coverFive.style.left = -coverMov + "%";
       }
       if (scrollPercentage > 49.15) {
-        coverFive.style.left = "-59rem";
+        coverFive.style.left = "-100vw";
       }
 
       if (scrollPercentage >= 49.15 && scrollPercentage <= 58.1) {
@@ -105,7 +105,7 @@ function coverScroll() {
         coverSix.style.right = -coverMov + "%";
       }
       if (scrollPercentage > 58.1) {
-        coverSix.style.right = "-59rem";
+        coverSix.style.right = "-100vw";
       }
 
       if (scrollPercentage >= 58.1 && scrollPercentage <= 67.05) {
@@ -114,7 +114,7 @@ function coverScroll() {
         coverSeven.style.left = -coverMov + "%";
       }
       if (scrollPercentage > 67.05) {
-        coverSeven.style.left = "-59rem";
+        coverSeven.style.left = "-100vw";
       }
 
       if (scrollPercentage >= 67.05 && scrollPercentage <= 76) {
@@ -123,7 +123,7 @@ function coverScroll() {
         coverEight.style.right = -coverMov + "%";
       }
       if (scrollPercentage > 76) {
-        coverEight.style.right = "-59rem";
+        coverEight.style.right = "-100vw";
       }
     });
   }
