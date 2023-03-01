@@ -49,12 +49,18 @@ body {
   justify-content: right;
 }
 
-#nav-bar img {
-  width: 10vw;
+.logo-a {
   position: relative;
   left: 10vw;
+  width: 13vw;
+  object-fit: contain;
+}
+
+#nav-bar img {
+  width: 100%;
   z-index: 3;
 }
+
 .nav-links {
   display: flex;
   width: 100vw;
@@ -667,15 +673,14 @@ body {
   .clin-cont {
     height: 50vw;
   }
-  #nav-bar img {
-    width: 13vw;
+  .logo-a {
+    width: 15vw;
   }
   .nav-links li {
     margin-right: 1.5vw;
     letter-spacing: 0.3vw;
     font-size: 1vw;
   }
-
   .rdv-div {
     margin-right: 1vw;
     right: 2vw;
@@ -704,6 +709,9 @@ body {
 @media screen and (max-width: 1440px) {
   .clin-cont {
     height: 55vw;
+  }
+  .logo-a {
+    width: 20vw;
   }
   .first-sect {
     height: 55vw;
@@ -824,8 +832,8 @@ body {
   .clin-cont {
     height: 65vw;
   }
-  #nav-bar img {
-    width: 15vw;
+  .logo-a {
+    left: 6vw;
   }
   .nav-links li {
     margin-right: 2vw;
@@ -876,16 +884,12 @@ body {
   .loading-bar {
     height: 1.25vw;
   }
+  .logo-a {
+    width: 23vw;
+    left: 5vw;
+  }
   .clin-cont {
-    height: 70vw;
-  }
-  #nav-bar {
-    padding-top: 1vw;
-    padding-left: 3.5vw;
-  }
-  #nav-bar img {
-    left: 5%;
-    width: 15%;
+    height: 85vw;
   }
   .nav-links li {
     margin-right: 2vw;
@@ -1060,9 +1064,8 @@ body {
     height: 120vw;
     background-position: -20vw 0;
   }
-  #nav-bar {
-    padding-top: 2vw;
-    padding-left: 4vw;
+  .logo-a {
+    left: 10vw;
   }
   .nav-links {
     display: none;
@@ -1090,10 +1093,6 @@ body {
     width: 26vw;
     font-size: 1.9vw;
     height: 5.5vw;
-  }
-  #nav-bar img {
-    left: 5%;
-    width: 20%;
   }
   .first-sect {
     height: 170vw;
@@ -1233,29 +1232,24 @@ body {
     height: 170vw;
     background-position: -35vw 0;
   }
-  #nav-bar img {
-    width: 30vw;
-    left: 2vw;
-  }
   .container-total {
-    top: 15.7vw;
-    right: 41vw;
+    right: 40vw;
   }
   .container,
   .active {
-    right: -10.5vw;
+    right: -6.5vw;
     margin-top: 4vw;
   }
   .menu {
-    width: 35vw;
-    height: 50vw;
+    width: 27vw;
+    height: 40vw;
   }
   .menu-icon i {
-    font-size: 7vw;
+    font-size: 5.5vw;
   }
   .menu a {
-    font-size: 3.5vw;
-    padding-top: 2vw;
+    font-size: 2.5vw;
+    padding-top: 1.5vw;
   }
   .rdv-text {
     width: 37vw;
@@ -1418,6 +1412,31 @@ body {
     height: 210vw;
     background-position: -50vw 0;
   }
+  #nav-bar {
+    position: relative;
+    top: 2.5vw;
+  }
+  .logo-a {
+    width: 33vw;
+  }
+  .container-total {
+    top: 14vw;
+  }
+  .container,
+  .active {
+    right: -10.5vw;
+    margin-top: 5vw;
+  }
+  .menu {
+    width: 35vw;
+    height: 46vw;
+  }
+  .menu-icon i {
+    font-size: 7vw;
+  }
+  .menu a {
+    font-size: 3.5vw;
+  }
   .first-sect {
     height: 220vw;
   }
@@ -1550,6 +1569,21 @@ body {
   .clin-cont {
     height: 240vw;
   }
+  .logo-a {
+    width: 37vw;
+    left: 7vw;
+  }
+  #nav-bar {
+    position: relative;
+    top: 2vw;
+  }
+  .container-total {
+    top: 15.5vw;
+  }
+  .menu {
+    width: 35vw;
+    height: 50vw;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -1560,12 +1594,15 @@ body {
     height: 250vw;
     background-position: -75vw 0;
   }
-  #nav-bar img {
-    width: 33vw;
-    left: 3vw;
+  .logo-a {
+    width: 40vw;
+    top: 1vw;
+  }
+  #nav-bar {
+    top: 1vw;
   }
   .container-total {
-    top: 18vw;
+    top: 17vw;
   }
   .container,
   .active {

@@ -16,6 +16,8 @@ const coverEight = document.getElementById("cover-eight");
 const loadingBar = document.querySelector(".loading-bar");
 const body = document.querySelector("body");
 const firstSect = document.querySelector(".first-sect");
+const menuIcon = document.querySelector('.menu-icon');
+const container = document.querySelector('.container');
 
 //Event Listeners
 
@@ -140,3 +142,7 @@ function firstSectOpacity() {
     firstSect.style.opacity = opacityLevel;
   }
 }
+
+menuIcon.addEventListener('click', () => {
+  container.classList.toggle('active');
+});

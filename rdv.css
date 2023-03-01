@@ -11,8 +11,9 @@ body {
   font-family: "Poppins", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  height: 137vh;
   overscroll-behavior: none;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 button {
@@ -93,8 +94,8 @@ h1 {
 }
 
 .icon {
-  height: 100px;
-  width: 100px;
+  height: 6vw;
+  width: 6vw;
 }
 
 .email {
@@ -219,12 +220,6 @@ textarea {
   accent-color: #81b8008c;
 }
 
-.group {
-  display: flex;
-  width: 4rem;
-  justify-content: space-around;
-}
-
 .dispos {
   display: flex;
   flex-direction: column;
@@ -249,6 +244,7 @@ textarea {
 
 .group {
   margin-right: 4rem;
+  width: 4rem;
   display: flex;
   justify-content: flex-start;
 }
@@ -295,20 +291,11 @@ textarea {
   #form_button {
     padding: 15px 25px;
   }
-
-  .icon {
-    scale: 1.8;
-  }
 }
 
 @media screen and (max-width: 420px) {
   h1 {
     font-size: 20px;
-  }
-
-  .icon {
-    height: 35px;
-    width: 35px;
   }
 
   .underline {
@@ -336,5 +323,67 @@ textarea {
   body {
     overflow: visible;
     height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .icon {
+    height: 10vw;
+    width: 10vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .icon {
+    height: 14vw;
+    width: 14vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .icon {
+    height: 20vw;
+    width: 20vw;
+  }
+  .group {
+    margin-right: 5.5vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .group {
+    margin-right: 3vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .icon {
+    height: 26vw;
+    width: 26vw;
+  }
+  .dispos label {
+    font-size: 4vw;
+  }
+  .checkbox {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  .group {
+    width: 3.75rem;
+    margin-right: 1vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .dispos label {
+    font-size: 3.5vw;
+  }
+  .checkbox {
+    height: 1rem;
+    width: 1rem;
+  }
+  .group {
+    width: 3rem;
+    margin-right: 0;
   }
 }

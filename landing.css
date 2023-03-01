@@ -44,10 +44,15 @@ body {
   justify-content: right;
 }
 
-#nav-bar img {
-  width: 10vw;
+.logo-a {
   position: relative;
   left: 10vw;
+  width: 13vw;
+  object-fit: contain;
+}
+
+#nav-bar img {
+  width: 100%;
   z-index: 3;
 }
 .nav-links {
@@ -632,6 +637,9 @@ body {
   .img-bg {
     height: 50vw;
   }
+  .logo-a {
+    width: 15vw;
+  }
   .text-image-div {
     height: 35vw;
   }
@@ -655,8 +663,8 @@ body {
   .img-bg {
     height: 55vw;
   }
-  #nav-bar img {
-    width: 13vw;
+  .logo-a {
+    width: 20vw;
   }
   .nav-links li {
     margin-right: 1.5vw;
@@ -763,8 +771,8 @@ body {
   .img-bg {
     height: 65vw;
   }
-  #nav-bar img {
-    width: 15vw;
+  .logo-a {
+    left: 6vw;
   }
   .nav-links li {
     margin-right: 2vw;
@@ -788,13 +796,9 @@ body {
   .img-bg {
     height: 70vw;
   }
-  #nav-bar {
-    padding-top: 1vw;
-    padding-left: 3.5vw;
-  }
-  #nav-bar img {
-    left: 5%;
-    width: 15%;
+  .logo-a {
+    width: 23vw;
+    left: 5vw;
   }
   .nav-links li {
     margin-right: 2vw;
@@ -957,13 +961,12 @@ body {
   .loading-bar {
     height: 1.75vw;
   }
+  .logo-a {
+    left: 10vw;
+  }
   .img-bg {
     height: 110vw;
     background-position: -60vw 0;
-  }
-  #nav-bar {
-    padding-top: 2vw;
-    padding-left: 4vw;
   }
   .nav-links {
     display: none;
@@ -1006,10 +1009,6 @@ body {
     width: 26vw;
     font-size: 1.9vw;
     height: 5.5vw;
-  }
-  #nav-bar img {
-    left: 5%;
-    width: 20%;
   }
   .first-sect {
     height: 140vw;
@@ -1273,12 +1272,15 @@ body {
     height: 190vw;
     background-position: -155vw 0;
   }
-  #nav-bar img {
-    width: 30vw;
-    left: 2vw;
+  #nav-bar {
+    position: relative;
+    top: 2.5vw;
+  }
+  .logo-a {
+    width: 33vw;
   }
   .container-total {
-    top: 15.5vw;
+    top: 14vw;
     right: 41vw;
   }
   .container,
@@ -1423,22 +1425,39 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+  .logo-a {
+    width: 37vw;
+    left: 7vw;
+  }
+  #nav-bar {
+    position: relative;
+    top: 2vw;
+  }
+  .container-total {
+    top: 15.5vw;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .loading-bar {
     height: 3.2vw;
   }
+  .logo-a {
+    width: 40vw;
+    top: 1vw;
+  }
+  #nav-bar {
+    top: 1vw;
+  }
+  .container-total {
+    top: 17vw;
+  }
   .img-bg {
     height: 220vw;
     background-position: -200vw 0;
   }
-  #nav-bar img {
-    width: 33vw;
-    left: 3vw;
-  }
   .container-total {
-    top: 18vw;
+    top: 17vw;
   }
   .container,
   .active {
